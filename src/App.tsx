@@ -1,7 +1,6 @@
 import { Container, Divider, Stack } from '@chakra-ui/react';
-import { NewTodo } from './components/NewTodo';
-// import { TodoList } from './components/TodoList';
-import { TodoViewer } from './components/TodoViewer';
+import { NewTodo } from 'components/NewTodo';
+import { TodoViewer } from 'components/TodoViewer';
 import './App.css';
 
 function App() {

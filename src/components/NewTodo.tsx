@@ -1,8 +1,8 @@
 import { Button, Input, Stack } from '@chakra-ui/react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useState, FormEventHandler } from 'react';
-import { createTodo } from '../services/todos';
-import { Todo } from '../types/todo';
+import { createTodo } from 'services/todos';
+import { Todo } from 'types/todo';
 
 const NewTodo = () => {
     const [title, setTitle] = useState('');

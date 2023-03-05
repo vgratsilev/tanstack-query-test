@@ -1,7 +1,7 @@
 import { Button, ButtonGroup, Stack } from '@chakra-ui/react';
 import { useState } from 'react';
-import { TodoState } from '../types/todo';
-import { TodoList } from './TodoList';
+import { TodoState } from 'types/todo';
+import { TodoList } from 'components/TodoList';
 
 const TodoViewer = () => {
     const [view, setView] = useState<TodoState>('all');

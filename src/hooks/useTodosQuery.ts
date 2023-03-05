@@ -1,7 +1,7 @@
 import { useToast } from '@chakra-ui/react';
 import { useQuery } from '@tanstack/react-query';
-import { fetchTodos } from '../services/todos';
-import { TodoState } from '../types/todo';
+import { fetchTodos } from 'services/todos';
+import { TodoState } from 'types/todo';
 
 const useTodosQuery = (state: TodoState) => {
     const toast = useToast();

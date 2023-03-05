@@ -1,15 +1,9 @@
 import { Checkbox, ListItem, Stack } from '@chakra-ui/react';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { toggleTodoStatus } from 'services/todos';
 import { Todo } from 'types/todo';
+import { useToggleTodo } from 'hooks/useToggleTodo';
 
 const TodoItem = ({ completed, id, title }: Todo) => {
-    const client = useQueryClient();
-
-    const { mutate: toggle } = useMutation({
-        mutationFn: () => toggleTodoStatus(id, !completed),
-        onSuccess: () => client.invalidateQueries(['todos']),
-    });
+    const toggle = useToggleTodo({ id, completed });
 
     return (
         <ListItem>

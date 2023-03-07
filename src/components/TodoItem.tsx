@@ -3,7 +3,7 @@ import { Todo } from 'types/todo';
 import { useToggleTodo } from 'hooks/useToggleTodo';
 
 const TodoItem = ({ completed, id, title }: Todo) => {
-    const toggle = useToggleTodo({ id, completed });
+    const { toggle } = useToggleTodo({ id, completed });
 
     return (
         <ListItem>

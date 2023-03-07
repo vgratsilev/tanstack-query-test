@@ -12,7 +12,7 @@ const useToggleTodo = ({ id, completed }: ToggleTodoProps) => {
         onSuccess: () => client.invalidateQueries(['todos']),
     });
 
-    return toggle;
+    return { toggle };
 };
 
 export { useToggleTodo };
